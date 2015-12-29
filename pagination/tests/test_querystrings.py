@@ -18,10 +18,10 @@ class TestQuerystringUpdate(RequestTestCase):
         # a predictable order.
         new_querydict = QueryDict(querystring).dict()
         expected = {
-            'page': 3,
+            'page': '3',
             'q': 'search_term',
         }
-        self.assertCountEqual(new_querydict, expected)
+        self.assertDictEqual(new_querydict, expected)
 
     def test_querystring_update(self):
         """Test that individual GET arguments are updated or preserved correctly."""
@@ -32,7 +32,7 @@ class TestQuerystringUpdate(RequestTestCase):
         # a predictable order.
         new_querydict = QueryDict(querystring).dict()
         expected = {
-            'page': 3,
+            'page': '3',
             'q': search_term,
         }
-        self.assertCountEqual(new_querydict, expected)
+        self.assertDictEqual(new_querydict, expected)

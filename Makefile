@@ -12,6 +12,6 @@ release:
 	@python setup.py register sdist bdist_wheel upload
 
 test:
-	@coverage run test_project/manage.py test pagination --verbosity=${VERBOSITY}
+	@coverage run test_project/manage.py test pagination --keepdb --verbosity=${VERBOSITY}
 	@flake8 .
 	@DJANGO_SETTINGS_MODULE=test_project.settings coverage report
