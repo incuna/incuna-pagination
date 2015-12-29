@@ -1,7 +1,7 @@
 from django.http import QueryDict
 
 from .utils import RequestTestCase
-from .. import querystrings
+from ..templatetags import querystrings
 
 
 class TestQuerystringUpdate(RequestTestCase):
