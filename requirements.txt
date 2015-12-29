@@ -1,0 +1,9 @@
+-e .
+colour-runner==0.0.4
+coverage==3.7.1
+dj-database-url==0.3.0
+factory-boy==2.6.0
+flake8==2.4.0
+flake8-import-order==0.5.3
+incuna-test-utils==6.4.1
+psycopg2==2.6.0

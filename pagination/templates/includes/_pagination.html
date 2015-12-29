@@ -1,0 +1,15 @@
+{% load querystrings %}
+
+{% if paginator.page_range|length > 1 %}
+    <div class="pagination {{ border_class|default:"bordered" }}">
+        {% if page_obj.has_previous %}
+            <a class="prev" href="?{% querystring_update request page=page_obj.previous_page_number %}">Previous</a>
+        {% endif %}
+        {% for pagination_page in paginator.page_range %}
+            <a class="{% if page_obj.number == pagination_page %}selected{% endif %}" href="?{% querystring_update request page=pagination_page %}">{{ pagination_page }}</a>
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <a class="next" href="?{% querystring_update request page=page_obj.next_page_number %}">next</a>
+        {% endif %}
+    </div>
+{% endif %}
