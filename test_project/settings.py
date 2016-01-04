@@ -10,7 +10,7 @@ ALLOWED_HOSTS = []
 ROOT_URLCONF = 'pagination.tests.urls'
 STATIC_URL = '/static/'
 
-SECRET_KEY = 'u!%l9f3x5yjza&u-r1cxsg=yhmq7)ng(9-nz-$r!v)ml8$htpu'
+SECRET_KEY = 'not-for-production'
 PASSWORD_HASHERS = ('django.contrib.auth.hashers.MD5PasswordHasher',)
 
 DATABASES = {
