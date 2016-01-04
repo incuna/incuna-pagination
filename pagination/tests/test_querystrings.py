@@ -21,7 +21,7 @@ class TestQuerystringUpdate(RequestTestCase):
             'page': '3',
             'q': 'search_term',
         }
-        self.assertDictEqual(new_querydict, expected)
+        self.assertEqual(new_querydict, expected)
 
     def test_querystring_update(self):
         """Test that individual GET arguments are updated or preserved correctly."""
@@ -35,4 +35,4 @@ class TestQuerystringUpdate(RequestTestCase):
             'page': '3',
             'q': search_term,
         }
-        self.assertDictEqual(new_querydict, expected)
+        self.assertEqual(new_querydict, expected)
