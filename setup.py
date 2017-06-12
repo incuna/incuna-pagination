@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 
 setup(
-    version='0.1.1',
+    version='0.1.2',
     name='incuna-pagination',
     packages=find_packages(),
     include_package_data=True,

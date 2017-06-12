@@ -7,7 +7,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = True
 ALLOWED_HOSTS = []
-ROOT_URLCONF = 'pagination.tests.urls'
 STATIC_URL = '/static/'
 
 SECRET_KEY = 'not-for-production'
